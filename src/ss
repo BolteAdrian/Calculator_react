@@ -1,0 +1,63 @@
+import './Calculator.css';
+import React from 'react';
+
+function Calculator() {
+
+    function display(val) {
+
+        document.getElementById('result').value += val
+
+        return val
+
+    } function solve() {
+
+        let x = document.getElementById('result').value
+
+        let y = eval(x);
+
+        document.getElementById('result').value = y
+
+        return y
+
+    }
+    function clearScreen() {
+
+        document.getElementById('result').value = ''
+
+    }
+
+    return (
+        <div id="dimensiune_calculator">
+            <div id="distanta_ecran_butoane">
+                <div id="ecran">
+                    <input type='text' id='result' className='ecran'></input>
+                </div>
+                <div>
+                    <input type="button" value="1" className="button" onClick={() => display('1')}></input>
+                    <input type="button" value="2" className="button" onClick={() => display('2')}></input>
+                    <input type="button" value="3" className="button" onClick={() => display('3')}></input>
+                    <input type='button' value='C' onclick={clearScreen} class="clear" />
+                </div>
+                <div>
+                    <input type="button" value="4" className="button" onClick={() => display('4')}></input>
+                    <input type="button" value="5" className="button" onClick={() => display('5')}></input>
+                    <input type="button" value="6" className="button" onClick={() => display('6')}></input>
+                    <input type="button" value="+" className="operator" onClick={() => display('+')}></input>
+                </div>
+                <div>
+                    <input type="button" value="7" className="button" onClick={() => display('7')}></input>
+                    <input type="button" value="8" className="button " onClick={() => display('8')}></input>
+                    <input type="button" value="9" className="button" onClick={() => display('9')}></input>
+                    <input type="button" value="-" className="operator" onClick={() => display('-')}></input>
+
+                </div>
+                <div align="right">
+                    <input type="button" value="0" className="button" onClick={() => display('0')}></input>
+                    <input type="button" value="=" className="button equal-sign" onClick={solve}></input>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Calculator

@@ -1,0 +1,64 @@
+#dimensiune_calculator {
+    border-radius: 25px;
+    border: 2px solid;
+    padding: 25px;
+    border-style: double;
+    background-color: blue;
+    margin-bottom: 50px;
+    margin-top: -100px;
+}
+
+img {
+    width: 50px;
+    height: 10px;
+    margin-bottom: -120px;
+    margin-left: -200px;
+    margin-top: -50px;
+}
+
+#ecran {
+    border-radius: 25px;
+    border: 2px solid;
+    background-color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -85px;
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+
+#distanta_ecran_butoane {
+    padding-top: 70px;
+}
+
+button {
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: rgb(239, 243, 239);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+button:active {
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: rgb(55, 247, 7);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+button:hover {
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: rgb(131, 124, 124);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px 5px;
+}
